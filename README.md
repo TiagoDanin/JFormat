@@ -1,5 +1,5 @@
 # JFormat
-Python function str.format in JavaScript
+Python function str.format for JavaScript
 
 Exemples
 ```javascript
