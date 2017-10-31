@@ -1,7 +1,19 @@
 # JFormat
 Python function str.format for JavaScript
 
-Exemples
+# Used
+
+```javascript
+string.fomart(table, nullHide)`
+```
+
+or
+
+```javascript
+format(string, table, nullHide)
+````
+
+# Exemples
 ```javascript
 "Forever {Python}".format({Python: "JavaScript"});
 ```
