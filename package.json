@@ -1,0 +1,26 @@
+{
+  "name": "jformat",
+  "version": "1.0.2",
+  "description": "Python function str.format for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "install": "npm install jformat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiagoDanin/JFormat.git"
+  },
+  "keywords": [
+    "python",
+    "format",
+    "string",
+    "jformat"
+  ],
+  "author": "Tiago Danin <TiagoDanin@outlook.com> (https://TiagoDanin.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TiagoDanin/JFormat/issues"
+  },
+  "homepage": "https://github.com/TiagoDanin/JFormat#readme"
+}

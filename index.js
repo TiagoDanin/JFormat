@@ -4,6 +4,7 @@ String.prototype.format = function (args, hideNull) {
 	};
 	return format(string, args, hideNull)
 };
+
 function format(string, args, hideNull) {
 	if (args.__proto__ == Array.prototype) {
 		var newArgs = {};
@@ -22,3 +23,5 @@ function format(string, args, hideNull) {
 		};
 	});
 }
+
+module.exports = format
