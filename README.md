@@ -1,4 +1,4 @@
-# JFormat
+# JFormat [![Build Status](https://travis-ci.org/TiagoDanin/JFormat.svg?branch=master)](https://travis-ci.org/TiagoDanin/JFormat)
 Python function str.format for JavaScript
 
 # Used

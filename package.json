@@ -1,11 +1,11 @@
 {
   "name": "jformat",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Python function str.format for JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
-    "install": "npm install jformat"
+    "npm_install": "npm install jformat"
   },
   "repository": {
     "type": "git",
