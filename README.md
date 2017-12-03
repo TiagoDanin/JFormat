@@ -1,5 +1,7 @@
 # JFormat [![Build Status](https://travis-ci.org/TiagoDanin/JFormat.svg?branch=master)](https://travis-ci.org/TiagoDanin/JFormat)
+[![NPM](https://nodei.co/npm/jformat.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/jformat/)
 Python function str.format for JavaScript
+
 
 # Used
 
