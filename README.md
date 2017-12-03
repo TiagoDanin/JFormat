@@ -4,13 +4,13 @@ Python function str.format for JavaScript
 # Used
 
 ```javascript
-string.fomart(table, nullHide)`
+string.fomart(table, hide_if_hull)`
 ```
 
 or
 
 ```javascript
-format(string, table, nullHide)
+format(string, table, hide_if_hull)
 ````
 
 # Exemples

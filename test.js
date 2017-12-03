@@ -1,8 +1,12 @@
 var format = require('./index.js')
-console.log("Forever {Python}".format({Python: "JavaScript"})) //Forever JavaScript
-console.log("Forever {0}".format(["JavaScript"])) //Forever JavaScript
-console.log("Forever {Java}".format({}, true)) //Forever
+var assert = require('assert')
 
-console.log(format("Forever {Python}", {Python: "JavaScript"})) //Forever JavaScript
-console.log(format("Forever {0}", ["JavaScript"])) //Forever JavaScript
-console.log(format("Forever {Java}", {}, true)) //Forever
+console.log('[+] Executing tests')
+assert.equal("Forever {Python}".format({Python: "JavaScript"}), 'Forever JavaScript')
+assert.equal("Forever {0}".format(["JavaScript"]), 'Forever JavaScript')
+assert.equal("Forever {Java}".format({}, true), 'Forever ')
+console.log('[+] 50% OK')
+assert.equal(format("Forever {Python}", {Python: "JavaScript"}), 'Forever JavaScript')
+assert.equal(format("Forever {0}", ["JavaScript"]), 'Forever JavaScript')
+assert.equal(format("Forever {Java}", {}, true), 'Forever ')
+console.log('[+] 100% OK')
