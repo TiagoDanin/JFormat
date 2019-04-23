@@ -7,8 +7,8 @@ String.prototype.format = function (args, hideNull) {
 
 function format(string, args, hideNull) {
 	if (args.__proto__ == Array.prototype) {
-		var newArgs = {};
-		for (var i = 0; i < args.length; i++) {
+		let newArgs = {};
+		for (let i = 0; i < args.length; i++) {
 			newArgs[i] = args[i];
 		};
 		args = newArgs
