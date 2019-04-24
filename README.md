@@ -1,53 +1,81 @@
-# JFormat [![Build Status](https://travis-ci.org/TiagoDanin/JFormat.svg?branch=master)](https://travis-ci.org/TiagoDanin/JFormat)
+# JFormat
 
-[![NPM](https://nodei.co/npm/jformat.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/jformat/)
+[![Node](https://img.shields.io/node/v/jformat.svg?style=flat-square)](https://npmjs.org/package/jformat) [![Version](https://img.shields.io/npm/v/jformat.svg?style=flat-square)](https://npmjs.org/package/jformat) [![Downloads](https://img.shields.io/npm/dt/jformat.svg?style=flat-square)](https://npmjs.org/package/jformat) [![Travis](https://img.shields.io/travis/TiagoDanin/JFormat.svg?branch=master&style=flat-square)](https://travis-ci.org/TiagoDanin/JFormat) 
 
 Python function str.format for JavaScript
 
+## Installation
 
-# Used
+Module available through the [npm registry](https://www.npmjs.com/). It can be installed using the  [`npm`](https://docs.npmjs.com/getting-started/installing-npm-packages-locally) or [`yarn`](https://yarnpkg.com/en/) command line tools.
 
-```javascript
-string.fomart(table, hide_if_hull)`
+```sh
+# NPM
+npm install jformat --save
+# Or Using Yarn
+yarn add jformat
 ```
 
-or
+## Example
 
-```javascript
-format(string, table, hide_if_hull)
-````
-
-# Exemples
-```javascript
+```js
 "Forever {Python}".format({Python: "JavaScript"});
-```
-> "Forever JavaScript"
+// "Forever JavaScript"
 
-```javascript
 "Forever {0}".format(["JavaScript"]);
-```
-> "Forever JavaScript"
+// "Forever JavaScript"
 
-```javascript
 "Forever {Java}".format({}, true);
-```
-> "Forever 
+// "Forever "
 
-:^)
-
-```javascript
 format("Forever {Python}", {Python: "JavaScript"});
-```
-> "Forever JavaScript"
+// "Forever JavaScript"
 
-```javascript
 format("Forever {0}", ["JavaScript"]);
-```
-> "Forever JavaScript"
+// "Forever JavaScript"
 
-```javascript
 format("Forever {Java}", {}, true);
+// "Forever "
 ```
-> "Forever 
 
-:^)
+## Documentation
+
+```js
+format(string, table, HideIfNull)
+```
+
+### Options
+
+- **string**
+
+Type: `string`
+
+- **table**
+
+Type: `array` & `object`
+
+- **HideIfNull**
+
+Type: `boolean`
+
+## Tests
+
+To run the test suite, first install the dependencies, then run `test`:
+
+```sh
+# NPM
+npm test
+# Or Using Yarn
+yarn test
+```
+
+## Dependencies
+
+None
+
+## Contributors
+
+Pull requests and stars are always welcome. For bugs and feature requests, please [create an issue](https://github.com/TiagoDanin/JFormat/issues). [List of all contributors](https://github.com/TiagoDanin/JFormat/graphs/contributors).
+
+## License
+
+[MIT](LICENSE) © [TiagoDanin](https://TiagoDanin.github.io)
