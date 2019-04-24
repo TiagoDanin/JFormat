@@ -81,40 +81,66 @@ baseURL: https://tiagodanin.github.io
 
 
 <div class="uk-container">
-	<h1 id="jformat-build-status"><a href="#jformat-build-status">JFormat <a href="https://travis-ci.org/TiagoDanin/JFormat"><img src="https://travis-ci.org/TiagoDanin/JFormat.svg?branch=master" alt="Build Status"></a></a></h1>
-<p><a href="https://nodei.co/npm/jformat/"><img src="https://nodei.co/npm/jformat.png?downloads=true&#x26;downloadRank=true&#x26;stars=true" alt="NPM"></a></p>
+	<h1 id="jformat"><a href="#jformat">JFormat</a></h1>
+<p><a href="https://npmjs.org/package/jformat"><img src="https://img.shields.io/node/v/jformat.svg?style=flat-square" alt="Node"></a> <a href="https://npmjs.org/package/jformat"><img src="https://img.shields.io/npm/v/jformat.svg?style=flat-square" alt="Version"></a> <a href="https://npmjs.org/package/jformat"><img src="https://img.shields.io/npm/dt/jformat.svg?style=flat-square" alt="Downloads"></a> <a href="https://travis-ci.org/TiagoDanin/JFormat"><img src="https://img.shields.io/travis/TiagoDanin/JFormat.svg?branch=master&#x26;style=flat-square" alt="Travis"></a> </p>
 <p>Python function str.format for JavaScript</p>
-<h1 id="used"><a href="#used">Used</a></h1>
-<pre><code class="hljs language-javascript">string.fomart(table, hide_if_hull)<span class="hljs-string">`</span></code></pre>
-<p>or</p>
-<pre><code class="hljs language-javascript">format(string, table, hide_if_hull)</code></pre>
-<h1 id="exemples"><a href="#exemples">Exemples</a></h1>
-<pre><code class="hljs language-javascript"><span class="hljs-string">"Forever {Python}"</span>.format({<span class="hljs-attr">Python</span>: <span class="hljs-string">"JavaScript"</span>});</code></pre>
-<blockquote>
-<p>"Forever JavaScript"</p>
-</blockquote>
-<pre><code class="hljs language-javascript"><span class="hljs-string">"Forever {0}"</span>.format([<span class="hljs-string">"JavaScript"</span>]);</code></pre>
-<blockquote>
-<p>"Forever JavaScript"</p>
-</blockquote>
-<pre><code class="hljs language-javascript"><span class="hljs-string">"Forever {Java}"</span>.format({}, <span class="hljs-literal">true</span>);</code></pre>
-<blockquote>
-<p>"Forever </p>
-</blockquote>
-<p>:^)</p>
-<pre><code class="hljs language-javascript">format(<span class="hljs-string">"Forever {Python}"</span>, {<span class="hljs-attr">Python</span>: <span class="hljs-string">"JavaScript"</span>});</code></pre>
-<blockquote>
-<p>"Forever JavaScript"</p>
-</blockquote>
-<pre><code class="hljs language-javascript">format(<span class="hljs-string">"Forever {0}"</span>, [<span class="hljs-string">"JavaScript"</span>]);</code></pre>
-<blockquote>
-<p>"Forever JavaScript"</p>
-</blockquote>
-<pre><code class="hljs language-javascript">format(<span class="hljs-string">"Forever {Java}"</span>, {}, <span class="hljs-literal">true</span>);</code></pre>
-<blockquote>
-<p>"Forever </p>
-</blockquote>
-<p>:^)</p>
+<h2 id="installation"><a href="#installation">Installation</a></h2>
+<p>Module available through the <a href="https://www.npmjs.com/">npm registry</a>. It can be installed using the  <a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm</code></a> or <a href="https://yarnpkg.com/en/"><code>yarn</code></a> command line tools.</p>
+<pre><code class="hljs language-sh"><span class="hljs-comment"># NPM</span>
+npm install jformat --save
+<span class="hljs-comment"># Or Using Yarn</span>
+yarn add jformat</code></pre>
+<h2 id="example"><a href="#example">Example</a></h2>
+<pre><code class="hljs language-js"><span class="hljs-string">"Forever {Python}"</span>.format({<span class="hljs-attr">Python</span>: <span class="hljs-string">"JavaScript"</span>});
+<span class="hljs-comment">// "Forever JavaScript"</span>
+
+<span class="hljs-string">"Forever {0}"</span>.format([<span class="hljs-string">"JavaScript"</span>]);
+<span class="hljs-comment">// "Forever JavaScript"</span>
+
+<span class="hljs-string">"Forever {Java}"</span>.format({}, <span class="hljs-literal">true</span>);
+<span class="hljs-comment">// "Forever "</span>
+
+format(<span class="hljs-string">"Forever {Python}"</span>, {<span class="hljs-attr">Python</span>: <span class="hljs-string">"JavaScript"</span>});
+<span class="hljs-comment">// "Forever JavaScript"</span>
+
+format(<span class="hljs-string">"Forever {0}"</span>, [<span class="hljs-string">"JavaScript"</span>]);
+<span class="hljs-comment">// "Forever JavaScript"</span>
+
+format(<span class="hljs-string">"Forever {Java}"</span>, {}, <span class="hljs-literal">true</span>);
+<span class="hljs-comment">// "Forever "</span></code></pre>
+<h2 id="documentation"><a href="#documentation">Documentation</a></h2>
+<pre><code class="hljs language-js">format(string, table, HideIfNull)</code></pre>
+<h3 id="options"><a href="#options">Options</a></h3>
+<ul>
+<li>
+<p><strong>string</strong>
+Type: <code>string</code></p>
+</li>
+<li>
+<p><strong>table</strong></p>
+</li>
+<li>
+<p>Type: array<code>&#x26;</code>object`</p>
+</li>
+<li>
+<p><strong>HideIfNull</strong></p>
+</li>
+<li>
+<p>Type: <code>boolean</code></p>
+</li>
+</ul>
+<h2 id="tests"><a href="#tests">Tests</a></h2>
+<p>To run the test suite, first install the dependencies, then run <code>test</code>:</p>
+<pre><code class="hljs language-sh"><span class="hljs-comment"># NPM</span>
+npm <span class="hljs-built_in">test</span>
+<span class="hljs-comment"># Or Using Yarn</span>
+yarn <span class="hljs-built_in">test</span></code></pre>
+<h2 id="dependencies"><a href="#dependencies">Dependencies</a></h2>
+<p>None</p>
+<h2 id="contributors"><a href="#contributors">Contributors</a></h2>
+<p>Pull requests and stars are always welcome. For bugs and feature requests, please <a href="https://github.com/TiagoDanin/JFormat/issues">create an issue</a>. <a href="https://github.com/TiagoDanin/JFormat/graphs/contributors">List of all contributors</a>.</p>
+<h2 id="license"><a href="#license">License</a></h2>
+<p><a href="LICENSE">MIT</a> © <a href="https://TiagoDanin.github.io">TiagoDanin</a></p>
 
 
 	<hr class="uk-margin-top-remove uk-divider-icon">
