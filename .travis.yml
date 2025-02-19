@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-    - "8"
-    - "7"
-    - "6"
+    - "8.17.0"
+    - "7.10.1"
+    - "6.17.1"
 install:
     - npm install
 script:
